@@ -56,11 +56,18 @@
 
 // console.log("sum of 10 natural numbers : ",sum )
 
-// using while loop
-let sum=0
-let a=1
-while(a<=10){
-    sum+=a
-    a++
+// using while loop------------------------------------------------------
+// let sum=0
+// let a=1
+// while(a<=10){
+//     sum+=a
+//     a++
+// }
+// console.log("the sum of 10 natural number is : "+sum)
+
+// -------------------------------PRINT TABLE OF ANY NUMBER---------------------------
+
+let num=parseInt(prompt("enter any number"))
+for (let i = 1;i<=10;i++){
+    console.log(num,"x",i,"=",num*i)
 }
-console.log("the sum of 10 natural number is : "+sum)
