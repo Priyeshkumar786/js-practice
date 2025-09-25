@@ -59,3 +59,8 @@
 // using while loop
 let sum=0
 let a=1
+while(a<=10){
+    sum+=a
+    a++
+}
+console.log("the sum of 10 natural number is : "+sum)
