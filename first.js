@@ -54,3 +54,6 @@
 
 // }
 
+// console.log("sum of 10 natural numbers : ",sum )
+
+// using while loop
