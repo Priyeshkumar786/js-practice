@@ -57,3 +57,5 @@
 // console.log("sum of 10 natural numbers : ",sum )
 
 // using while loop
+let sum=0
+let a=1
