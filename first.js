@@ -66,8 +66,40 @@
 // console.log("the sum of 10 natural number is : "+sum)
 
 // -------------------------------PRINT TABLE OF ANY NUMBER---------------------------
+//                    by for loop
 
-let num=parseInt(prompt("enter any number"))
-for (let i = 1;i<=10;i++){
-    console.log(num,"x",i,"=",num*i)
-}
+
+// let num=parseInt(prompt("enter any number"))
+// for (let i = 1;i<=10;i++){
+//     console.log(num,"x",i,"=",num*i)
+// }
+
+// ----------------------------------by -while loop-------------------------------
+
+// let num=parseInt(prompt("enter number"))
+// let i=1
+
+// while(i<=10){
+//     console.log(num*i)
+//     i++
+// }
+
+
+
+
+// Q> 1
+//    1 2
+//    1 2 3
+//    1 2 3 4
+//    1 2 3 4 5
+
+
+// for(let i=1;i<=5;i++){                
+//   let row=""
+//   for (let j=1;j<=i;j++){
+//     row+=j
+
+//   }
+//   console.log(row);
+// }
+
