@@ -131,12 +131,32 @@
 
 // Q.} Floyd's Triangle
 
-1
-2 3
-4 5 6
-7 8 9 10
+// 1
+// 2 3
+// 4 5 6
+// 7 8 9 10
 
-let num=1
-for (let i=1;i<=5;i++){
-  row=""
-  
+// let num=1
+// for (let i=1;i<=5;i++){
+//   row=""
+//   for (let j=1;j<=i;j++){
+//     row+=num+" "
+//     num++
+//   }
+//   console.log(row)
+//   total=(row)
+// }
+
+// ============================================even odd==============================================================
+number=parseInt(prompt("enter number : "))
+function checkevenodd(num)
+{
+  if(num%2==0){
+    console.log(num,"even number")
+  }
+  else{
+    console.log(num,"is odd number")
+
+  }
+}
+number=
