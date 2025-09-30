@@ -177,3 +177,8 @@ console.log("total numbers of all subjects are : "+total)
 let percentage=(total/500)*100
 console.log("total percentage of 5 subjects are: "+percentage)
 
+
+if (percentage >=90 && percentage<=100){
+  console.log("Grade A")
+}
+
