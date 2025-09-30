@@ -186,3 +186,7 @@ else if (percentage>75 && percentage<90){
   console.log("Grade B")
 
 }
+
+else if(percentage>50 && percentage <75){
+  console.log("Grade C")
+}
