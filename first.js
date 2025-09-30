@@ -148,15 +148,27 @@
 // }
 
 // ============================================even odd==============================================================
-number=parseInt(prompt("enter number : "))
-function checkevenodd(num)
-{
-  if(num%2==0){
-    console.log(num,"even number")
-  }
-  else{
-    console.log(num,"is odd number")
+// number=parseInt(prompt("enter number : "))
+// function checkevenodd(num)
+// {
+//   if(num%2==0){
+//     console.log(num,"even number")
+//   }
+//   else{
+//     console.log(num,"is odd number")
 
-  }
-}
-number
+//   }
+// }
+// number
+// ======================================================================================================================
+
+
+// --------------------------------------- grade ------------------------------------------
+
+
+let num1=parseInt(prompt("enter num 1"))
+let num2=parseInt(prompt("enter num 2"))
+let num3=parseInt(prompt("enter num 3"))
+let num4=parseInt(prompt("enter num 4"))
+let num5=parseInt(prompt("enter num 5"))
+
