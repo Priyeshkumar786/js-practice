@@ -174,3 +174,6 @@ let num5=parseInt(prompt("enter num 5"))
 
 let total=num1+num2+num3+num4+num5
 console.log("total numbers of all subjects are : "+total)
+let percentage=(total/500)*100
+console.log("total percentage of 5 subjects are: "+percentage)
+
