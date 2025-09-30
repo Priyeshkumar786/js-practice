@@ -172,3 +172,5 @@ let num3=parseInt(prompt("enter num 3"))
 let num4=parseInt(prompt("enter num 4"))
 let num5=parseInt(prompt("enter num 5"))
 
+let total=num1+num2+num3+num4+num5
+console.log("total numbers of all subjects are : "+total)
