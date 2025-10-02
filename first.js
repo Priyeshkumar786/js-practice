@@ -203,4 +203,5 @@ let num = parseInt(prompt("Enter a number: "));
 
 if (num > 0) {
     console.log(num + " is Positive");
-}
+} else if (num < 0) {
+    
