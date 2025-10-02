@@ -206,4 +206,5 @@ if (num > 0) {
 } else if (num < 0) {
     console.log(num + " is Negative");
 } else {
-   
+    console.log;
+}
