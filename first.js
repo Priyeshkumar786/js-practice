@@ -166,31 +166,39 @@
 // --------------------------------------- grade ------------------------------------------
 
 
-let num1=parseInt(prompt("enter num 1"))
-let num2=parseInt(prompt("enter num 2"))
-let num3=parseInt(prompt("enter num 3"))
-let num4=parseInt(prompt("enter num 4"))
-let num5=parseInt(prompt("enter num 5"))
+// let num1=parseInt(prompt("enter num 1"))
+// let num2=parseInt(prompt("enter num 2"))
+// let num3=parseInt(prompt("enter num 3"))
+// let num4=parseInt(prompt("enter num 4"))
+// let num5=parseInt(prompt("enter num 5"))
 
-let total=num1+num2+num3+num4+num5
-console.log("total numbers of all subjects are : "+total)
-let percentage=(total/500)*100
-console.log("total percentage of 5 subjects are: "+percentage)
+// let total=num1+num2+num3+num4+num5
+// console.log("total numbers of all subjects are : "+total)
+// let percentage=(total/500)*100
+// console.log("total percentage of 5 subjects are: "+percentage)
 
 
-if (percentage >=90 && percentage<=100){
-  console.log("Grade A")
-}
+// if (percentage >=90 && percentage<=100){
+//   console.log("Grade A")
+// }
 
-else if (percentage>75 && percentage<90){
-  console.log("Grade B")
+// else if (percentage>75 && percentage<90){
+//   console.log("Grade B")
 
-}
+// }
 
-else if(percentage>50 && percentage <75){
-  console.log("Grade C")
-}
+// else if(percentage>50 && percentage <75){
+//   console.log("Grade C")
+// }
 
-else if(percentage>33 && percentage<50){
-  console.log("Grade D")
-}
+// else if(percentage>33 && percentage<50){
+//   console.log("Grade D")
+// }
+
+// else{
+//   console.log("Fail")
+// }
+
+let num = parseInt(prompt("Enter a number: "));
+
+if (num > 0)
