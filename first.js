@@ -197,15 +197,39 @@
 
 // else{
 //   console.log("Fail")
+// // }
+
+// let num = parseInt(prompt("Enter a number: "));
+
+// if (num > 0) {
+//     console.log(num + " is Positive");
+// } else if (num < 0) {
+//     console.log(num + " is Negative");
+// } else {
+//     console.log("Number is Zero");
 // }
 
-let num = parseInt(prompt("Enter a number: "));
-
-if (num > 0) {
-    console.log(num + " is Positive");
-} else if (num < 0) {
-    console.log(num + " is Negative");
-} else {
-    console.log("Number is Zero");
-}
 // some more process
+// ==========================================
+
+// Q.no 1 - Create 15 <div> elements using JavaScript.
+// Color all odd-numbered divs blue, and set their width = 100px, height = 50px.
+
+for(let i=1;i<=15;i++){
+    let box = document.createElement("div");
+    box.textContent = "BOX "+i;
+    box.style.width = "100px";
+    box.style.height = "50px";
+    box.style.margin = "5px"
+    box.style.textAlign = "center"
+    box.style.lineHeight = "50px";
+    box.style.border = "1px solid black"
+
+
+    if(i%2!==0){
+        box.style.backgroundColor = "blue"
+        box.style.color = "white";
+    }
+
+    document.body.appendChild(box);
+}
