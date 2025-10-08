@@ -215,21 +215,44 @@
 // Q.no 1 - Create 15 <div> elements using JavaScript.
 // Color all odd-numbered divs blue, and set their width = 100px, height = 50px.
 
-for(let i=1;i<=15;i++){
-    let box = document.createElement("div");
-    box.textContent = "BOX "+i;
-    box.style.width = "100px";
-    box.style.height = "50px";
-    box.style.margin = "5px"
-    box.style.textAlign = "center"
-    box.style.lineHeight = "50px";
+// for(let i=1;i<=15;i++){
+//     let box = document.createElement("div");
+//     box.textContent = "BOX "+i;
+//     box.style.width = "100px";
+//     box.style.height = "50px";
+//     box.style.margin = "5px"
+//     box.style.textAlign = "center"
+//     box.style.lineHeight = "50px";
+//     box.style.border = "1px solid black"
+
+
+//     if(i%2!==0){
+//         box.style.backgroundColor = "blue"
+//         box.style.color = "white";
+//     }
+
+//     document.body.appendChild(box);
+// }
+
+
+// --------------------------------------------------
+// Create 15 <div> elements using JavaScript.
+// Color all odd-numbered divs blue, and set their width = 100px, height = 50px.
+
+for (let i = 1;i<=15;i++){
+    let box = document.createElement('div')
+    box.textContent = "Box" + i;
+    box.style.width = "100px"
+    box.style.height = "50px"
+    box.style.textAlign= "center"
     box.style.border = "1px solid black"
 
-
-    if(i%2!==0){
+    if(i%2==0){
         box.style.backgroundColor = "blue"
-        box.style.color = "white";
+        box.style.color = "white"
+
     }
 
-    document.body.appendChild(box);
+    document.body.appendChild(box)
 }
+
