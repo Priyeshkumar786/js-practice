@@ -265,21 +265,61 @@
 // font size = 20px
 
 
-for (let i = 1;i<=10 ; i++){
-    let box = document.createElement('p')
-    box.textContent = "box" +i
-     box.style.textAlign = "center"
+// for (let i = 1;i<=10 ; i++){
+//     let box = document.createElement('p')
+//     box.textContent = "box" +i
+//      box.style.textAlign = "center"
 
     
-    if(i%2==0){
+//     if(i%2===0){
 
-        box.style.backgroundColor="yellow"
-        box.style.fontSize="20px"
+//         box.style.backgroundColor="yellow"
+//         box.style.fontSize="20px"
        
     
+//     }
+//     document.body.appendChild(box)
+
+
+// }
+
+// ================================================================================================
+// 🧩 Q3.
+
+// Create 5 <h3> tags dynamically using JavaScript.
+// Give each heading a different color using an array of colors.
+
+// let colors = ["red","green","blue","yellow","black"];
+
+// for(let i = 0;i<colors.length;i++){
+//     let heading= document.createElement("h3");
+//     heading.textContent = "this is heading " + (i+1);
+
+//     heading.style.color = colors[i];
+//     heading.style.fontFamily=" arial "
+
+//     document.body.appendChild(heading)
+    
+// }
+
+// --------------------------------------------------------------
+
+for (let i = 1;i<=15;i++){
+    let odd = document.createElement("div")
+
+    odd.textContent = "this is div "+i
+    odd.style.textAlign="center"
+    odd.style.width="100px"
+    odd.style.height = "50px"
+    odd.style.border="1px solid black"
+
+    if(i%2!=0){
+        odd.style.backgroundColor="blue"
+        odd.style.color="white"
     }
-    document.body.appendChild(box)
+
+    document.body.appendChild(odd)
+
 
 
 }
-
