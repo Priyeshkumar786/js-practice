@@ -239,20 +239,47 @@
 // Create 15 <div> elements using JavaScript.
 // Color all odd-numbered divs blue, and set their width = 100px, height = 50px.
 
-for (let i = 1;i<=15;i++){
-    let box = document.createElement('div')
-    box.textContent = "Box" + i;
-    box.style.width = "100px"
-    box.style.height = "50px"
-    box.style.textAlign= "center"
-    box.style.border = "1px solid black"
+// for (let i = 1;i<=15;i++){
+//     let box = document.createElement('div')
+//     box.textContent = "Box" + i;
+//     box.style.width = "100px"
+//     box.style.height = "50px"
+//     box.style.textAlign= "center"
+//     box.style.border = "1px solid black"
 
+//     if(i%2!=0){
+//         box.style.backgroundColor = "blue"
+//         box.style.color = "white"
+
+//     }
+
+//     document.body.appendChild(box)
+// }
+
+// ================================================================================================================
+// 🧩 Q2.
+
+// Create 10 <p> elements using JavaScript.
+// For every even-numbered paragraph, set:
+// background color = yellow
+// font size = 20px
+
+
+for (let i = 1;i<=10 ; i++){
+    let box = document.createElement('p')
+    box.textContent = "box" +i
+     box.style.textAlign = "center"
+
+    
     if(i%2==0){
-        box.style.backgroundColor = "blue"
-        box.style.color = "white"
 
+        box.style.backgroundColor="yellow"
+        box.style.fontSize="20px"
+       
+    
     }
-
     document.body.appendChild(box)
+
+
 }
 
