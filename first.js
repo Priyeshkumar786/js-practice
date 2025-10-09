@@ -304,22 +304,45 @@
 
 // --------------------------------------------------------------
 
-for (let i = 1;i<=15;i++){
-    let odd = document.createElement("div")
+// for (let i = 1;i<=15;i++){
+//     let odd = document.createElement("div")
 
-    odd.textContent = "this is div "+i
-    odd.style.textAlign="center"
-    odd.style.width="100px"
-    odd.style.height = "50px"
-    odd.style.border="1px solid black"
+//     odd.textContent = "this is div "+i
+//     odd.style.textAlign="center"
+//     odd.style.width="100px"
+//     odd.style.height = "50px"
+//     odd.style.border="1px solid black"
 
-    if(i%2!=0){
-        odd.style.backgroundColor="blue"
-        odd.style.color="white"
+//     if(i%2!=0){
+//         odd.style.backgroundColor="blue"
+//         odd.style.color="white"
+//     }
+
+//     document.body.appendChild(odd)
+
+
+
+// }
+// ===============================================================
+    // let num = parseInt(prompt("enter number : "))
+
+    // console.log("Original value:", num);
+
+    // num++;  // increment
+    // console.log("After increment:", num);
+
+    // num--;  // decrement
+    // console.log("After decrement:", num);
+
+// =============================================================
+
+    // Increment in loop
+    for (let i = 1; i <= 5; i++) {
+      console.log("Increment Loop Value:", i);
     }
 
-    document.body.appendChild(odd)
-
-
-
-}
+    // Decrement in loop
+    for (let j = 5; j >= 1; j--) {
+      console.log("Decrement Loop Value:", j);
+    }
+  
