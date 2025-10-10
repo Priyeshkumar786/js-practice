@@ -337,12 +337,40 @@
 // =============================================================
 
     // Increment in loop
-    for (let i = 1; i <= 5; i++) {
-      console.log("Increment Loop Value:", i);
-    }
+    // for (let i = 1; i <= 5; i++) {
+    //   console.log("Increment Loop Value:", i);
+    // }
 
-    // Decrement in loop
-    for (let j = 5; j >= 1; j--) {
-      console.log("Decrement Loop Value:", j);
-    }
+    // // Decrement in loop
+    // for (let j = 5; j >= 1; j--) {
+    //   console.log("Decrement Loop Value:", j);
+    // }
+    // ---------------------------------------------------------------
+
+    // 1.)
+
+    // function fun(){
+    //  let a=  document.getElementById("java").textContent= "Welcome to javascript dom"
+     
+    // }
+
+    // -------------------------------------------------------------------
+
+    // 2.)
+
+    // function fun1(){
+
+    //   document.getElementById("head").style.backgroundColor="red"
+
+
+
+    // }
+
+    // 3.)
+
+    
+
+
+
+    
   
