@@ -362,17 +362,23 @@
 
     //   document.getElementById("head").style.backgroundColor="red"
 
-
+     //---------------------------------------------------------------------------
 
     // }
 
     // 3.)
 
-    function showname(){
-        let name = document.getElementById("username").value 
-        document.getElementById("displayname").textContent = "hello, "+name 
-    }
+    // function showname(){
+    //     let name = document.getElementById("username").value 
+    //     document.getElementById("displayname").textContent = "hello, "+name 
+    // }
 
+    // ---------------------------------------------------------------------------
+
+    // function fun1(){
+    //     let a = document.getElementById("username").value 
+    //     document.getElementById("displayname").textContent = "hello, "+a
+    // }
 
 
     
