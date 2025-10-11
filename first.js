@@ -368,7 +368,10 @@
 
     // 3.)
 
-    
+    function showname(){
+        let name = document.getElementById("username").value 
+        document.getElementById("displayname").textContent = "hello, "+name 
+    }
 
 
 
