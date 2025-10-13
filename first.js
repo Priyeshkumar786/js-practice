@@ -384,11 +384,5 @@
 
 // --------------------------------------------------------------------------------
 
-//another example done 
-//mor epractice questions
-//more example
-//more working
-//more working
-//more example
-//more done
+// saveral more workings to do
   
