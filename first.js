@@ -385,10 +385,10 @@
 // ---------------------------------------------------------------------------------------
                                    //  home practice                                    
   
-    let final = document.querySelectorAll("p")
-    final.(p=>{
-        p.style.color = "blue"
-    })
+    // let final = document.querySelectorAll("p")
+    // final.(p=>{
+    //     p.style.color = "blue"
+    // })
 
     // let final1 = document.querySelectorAll("#self1")
     // final1.forEach(p=>{
@@ -398,13 +398,7 @@
     // --------------------------------------------------------------------------------------
 
 
-    priyesh kumar mishra
-    priyesh kumar mishra
-    priyesh kumar mishra
-    priyesh kumar mishra
-    priyesh kumar mishra
-    priyesh kumar mishra
-    
+
 
 
 
