@@ -430,8 +430,15 @@ number
     //     document.getElementById("displayname").textContent = "hello, "+name 
     // }
 
+// ------------------------------------------------
 
+//  2.)
 
+    // function fun1(){
+
+    //   document.getElementById("head").style.backgroundColor="red"
+
+    
 
 
 
