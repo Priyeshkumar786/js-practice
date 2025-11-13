@@ -25,6 +25,7 @@
 // a=b
 // b=temp;
 
+
 // console.log("after swapping : a = ",a," , b = ",b);
 
 // ----------------------------------- ✅ Q3: Write a program to find the largest of three numbers-------------------------------------------------
@@ -396,6 +397,31 @@
     // })
 
     // --------------------------------------------------------------------------------------
+
+
+//     setInterval(() => {
+//   let time = new Date().toLocaleTimeString()
+//   console.log(time)
+// }, 1000)
+
+// ----------------------------------------------------
+//------------------------ display grip command and grid coloumnhave to be mentioned fo website -------------------------------//
+
+
+number=parseInt(prompt("enter number : "))
+function checkevenodd(num)
+{
+  if(num%2==0){
+    console.log(num,"even number")
+  }
+  else{
+    console.log(num,"is odd number")
+
+  }
+}
+number
+
+
 
 
 
