@@ -505,3 +505,14 @@
 //     odd.style.width="100px"
 //     odd.style.height = "50px"
 //     odd.style.border="1px solid black"
+
+//     if(i%2!=0){
+//         odd.style.backgroundColor="blue"
+//         odd.style.color="white"
+//     }
+
+//     document.body.appendChild(odd)
+
+
+
+// }
