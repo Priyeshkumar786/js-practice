@@ -408,18 +408,18 @@
 //------------------------ display grip command and grid coloumnhave to be mentioned fo website -------------------------------//
 
 
-number=parseInt(prompt("enter number : "))
-function checkevenodd(num)
-{
-  if(num%2==0){
-    console.log(num,"even number")
-  }
-  else{
-    console.log(num,"is odd number")
+// number=parseInt(prompt("enter number : "))
+// function checkevenodd(num)
+// {
+//   if(num%2==0){
+//     console.log(num,"even number")
+//   }
+//   else{
+//     console.log(num,"is odd number")
 
-  }
-}
-number
+//   }
+// }
+// number
 
 // -------------------------------
 // 3.)
@@ -438,8 +438,17 @@ number
 
     //   document.getElementById("head").style.backgroundColor="red"
 
-    
+    // -----------------------------------------------------------
 
+ // let num = parseInt(prompt("enter number : "))
+
+    // console.log("Original value:", num);
+
+    // num++;  // increment
+    // console.log("After increment:", num);
+
+    // num--;  // decrement
+    // console.log("After decrement:", num);
 
 
 
