@@ -461,5 +461,39 @@
     //     self1.style.color = "black"
     // })
 
+// -----------------------------------------------------------------
+// for (let i = 1;i<=15;i++){
+//     let odd = document.createElement("div")
+
+//     odd.textContent = "this is div "+i
+//     odd.style.textAlign="center"
+//     odd.style.width="100px"
+//     odd.style.height = "50px"
+//     odd.style.border="1px solid black"
+
+//     if(i%2!=0){
+//         odd.style.backgroundColor="blue"
+//         odd.style.color="white"
+//     }
+
+//     document.body.appendChild(odd)
+
+// // for (let i = 1;i<=15;i++){
+//     let odd = document.createElement("div")
+
+//     odd.textContent = "this is div "+i
+//     odd.style.textAlign="center"
+//     odd.style.width="100px"
+//     odd.style.height = "50px"
+//     odd.style.border="1px solid black"
+
+//     if(i%2!=0){
+//         odd.style.backgroundColor="blue"
+//         odd.style.color="white"
+//     }
+
+//     document.body.appendChild(odd)
 
 
+
+// }
