@@ -449,6 +449,10 @@
 
     // num--;  // decrement
     // console.log("After decrement:", num);
+// ------------------------------------------------------------
 
+// let final = document.querySelectorAll("p")
+    // final.(p=>{
+    
 
 
