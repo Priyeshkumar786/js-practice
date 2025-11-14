@@ -453,6 +453,10 @@
 
 // let final = document.querySelectorAll("p")
     // final.(p=>{
+    //     p.style.color = "blue"
+    // })
+
     
+
 
 
