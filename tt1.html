@@ -1,0 +1,273 @@
+<!-- =============simple calculator============== -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <input type="text" id="display" disabled><br><br>
+
+  <button onclick="append('7')">7</button>
+  <button onclick="append('8')">8</button>
+  <button onclick="append('9')">9</button>
+  <button onclick="append('/')">/</button><br><br>
+
+  <button onclick="append('4')">4</button>
+  <button onclick="append('5')">5</button>
+  <button onclick="append('6')">6</button>
+  <button onclick="append('*')">*</button><br><br>
+
+  <button onclick="append('1')">1</button>
+  <button onclick="append('2')">2</button>
+  <button onclick="append('3')">3</button>
+  <button onclick="append('-')">-</button><br><br>
+
+  <button onclick="append('0')">0</button>
+  <button onclick="append('.')">.</button>
+  <button onclick="append('+')">+</button>
+  <button onclick="calculate()">=</button><br><br>
+
+  <button onclick="clearDisplay()">Clear</button>
+  <button onclick="deleteChar()">Delete</button>
+
+  <script src="tt1.js"></script>
+</body>
+</html> -->
+<!-- ====================================================================== -->
+             <!-- ====digital clock===== -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Digital Clock</title>
+</head>
+<body>
+
+  <h2>Digital Clock</h2>
+
+  <h1 id="clock"></h1>
+
+  <script>
+    function updateClock() {
+      let now = new Date();
+
+      let hours = now.getHours();
+      let minutes = now.getMinutes();
+      let seconds = now.getSeconds();
+
+      // Add leading zero
+      hours = (hours < 10 ? "0" : "") + hours;
+      minutes = (minutes < 10 ? "0" : "") + minutes;
+      seconds = (seconds < 10 ? "0" : "") + seconds;
+
+      document.getElementById("clock").innerText =
+        hours + " : " + minutes + " : " + seconds;
+    }
+
+    // Update every second
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+
+</body>
+</html> -->
+
+<!-- ============stopwatch============== -->
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Stopwatch</title>
+</head>
+<body>
+
+  <h2>Stopwatch</h2>
+
+  <div>
+    <input type="text" id="display" value="00:00:00" disabled>
+  </div>
+  <br>
+
+  <button id="startBtn" onclick="startStopwatch()">Start</button>
+  <button id="stopBtn" onclick="stopStopwatch()">Stop</button>
+  <button onclick="resetStopwatch()">Reset</button>
+  <button onclick="lap()">Lap</button>
+
+  <h3>Laps</h3>
+  <ol id="laps"></ol>
+
+  <script>
+    // Elements
+    const display = document.getElementById('display');
+    const lapsList = document.getElementById('laps');
+
+    // State
+    let startTime = 0;         // timestamp when started/resumed
+    let elapsedBefore = 0;     // total elapsed while previously running (ms)
+    let timerId = null;
+
+    // Format ms -> "MM:SS:CS" (CS = centiseconds, 2 digits)
+    function formatTime(ms) {
+      const totalCentis = Math.floor(ms / 10);
+      const centis = totalCentis % 100;
+      const totalSeconds = Math.floor(totalCentis / 100);
+      const seconds = totalSeconds % 60;
+      const minutes = Math.floor(totalSeconds / 60);
+
+      const mm = (minutes < 10 ? '0' : '') + minutes;
+      const ss = (seconds < 10 ? '0' : '') + seconds;
+      const cs = (centis < 10 ? '0' : '') + centis;
+
+      return `${mm}:${ss}:${cs}`;
+    }
+
+    function updateDisplay() {
+      const now = performance.now();
+      const elapsed = elapsedBefore + (startTime ? (now - startTime) : 0);
+      display.value = formatTime(elapsed);
+    }
+
+    function startStopwatch() {
+      if (timerId) return; // already running
+      startTime = performance.now();
+      timerId = setInterval(updateDisplay, 25); // update ~40fps
+      updateDisplay();
+    }
+
+    function stopStopwatch() {
+      if (!timerId) return;
+      const now = performance.now();
+      elapsedBefore += now - startTime;
+      startTime = 0; -->
+      <!-- clearInterval(timerId);
+      timerId = null;
+      updateDisplay();
+    }
+
+    function resetStopwatch() {
+      startTime = 0;
+      elapsedBefore = 0;
+      if (timerId) {
+        clearInterval(timerId);
+        timerId = null;
+      }
+      display.value = "00:00:00";
+      lapsList.innerHTML = '';
+    }
+
+    function lap() {
+      // Capture current elapsed without stopping
+      const now = performance.now();
+      const elapsed = elapsedBefore + (startTime ? (now - startTime) : 0);
+      const li = document.createElement('li');
+      li.textContent = formatTime(elapsed);
+      lapsList.appendChild(li);
+    }
+
+    // Optional: keyboard shortcuts (Space = start/stop, L = lap, R = reset)
+    document.addEventListener('keydown', function(e) {
+      if (e.code === 'Space') {
+        e.preventDefault();
+        if (timerId) stopStopwatch(); else startStopwatch();
+      } else if (e.key.toLowerCase() === 'l') {
+        lap();
+      } else if (e.key.toLowerCase() === 'r') {
+        resetStopwatch();
+      }
+    });
+  </script>
+
+</body>
+</html> -->
+<!-- =====================basic calender========================= -->
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic Calendar</title>
+</head>
+<body>
+
+  <h2 id="monthYear"></h2>
+
+  <button onclick="prevMonth()">Previous</button>
+  <button onclick="nextMonth()">Next</button>
+
+  <table border="1" cellpadding="10" style="margin-top:20px;">
+    <thead>
+      <tr>
+        <th>Sun</th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+        <th>Sat</th>
+      </tr>
+    </thead>
+    <tbody id="calendar-body"></tbody>
+  </table>
+
+  <script>
+    let currentDate = new Date();
+
+    function renderCalendar() {
+      let year = currentDate.getFullYear();
+      let month = currentDate.getMonth();
+
+      document.getElementById("monthYear").innerText =
+        currentDate.toLocaleString('default', { month: 'long' }) + " " + year;
+
+      let firstDay = new Date(year, month, 1).getDay();
+      let lastDate = new Date(year, month + 1, 0).getDate();
+
+      let tbody = document.getElementById("calendar-body");
+      tbody.innerHTML = "";
+
+      let row = document.createElement("tr");
+
+      // Empty cells before the first day
+      for (let i = 0; i < firstDay; i++) {
+        let cell = document.createElement("td");
+        cell.innerHTML = "";
+        row.appendChild(cell);
+      }
+
+      // Dates of the month
+      for (let date = 1; date <= lastDate; date++) {
+        if (row.children.length === 7) {
+          tbody.appendChild(row);
+          row = document.createElement("tr");
+        }
+
+        let cell = document.createElement("td");
+        cell.innerHTML = date;
+        row.appendChild(cell);
+      }
+
+      // Append last row
+      tbody.appendChild(row);
+    }
+
+    function prevMonth() {
+      currentDate.setMonth(currentDate.getMonth() - 1);
+      renderCalendar();
+    }
+
+    function nextMonth() {
+      currentDate.setMonth(currentDate.getMonth() + 1);
+      renderCalendar();
+    }
+
+    // Initial render
+    renderCalendar();
+  </script>
+
+</body>
+</html> -->
