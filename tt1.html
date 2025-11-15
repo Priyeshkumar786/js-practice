@@ -459,4 +459,13 @@ def logindata(request):
                     'higher': userdata.higher,
                     'details': userdata.detail,
                     'photo': userdata.photo,
-                  
+                    'contact': userdata.contact,
+                    'qualification': userdata.qualification
+                })
+            else:
+                msg = "Wrong Password"
+                return render(request,'login.html',{'msg': msg})
+
+        else:
+            msg = "Email id not registered"
+            return render(request,'login.html',{'msg': msg})
