@@ -452,4 +452,6 @@ def logindata(request):
             userdata = user.first()
 
             if userdata.password == lp:
-             
+                return render(request,'success.html', {
+                    'name': userdata.name,
+                  
