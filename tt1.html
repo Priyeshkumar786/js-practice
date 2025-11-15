@@ -185,8 +185,12 @@
 
 </body>
 </html> -->
-<!-- =====================basic calender========================= -->
- <!-- <!DOCTYPE html>
+
+
+<!-- ======================================basic calender====================================================== -->
+ 
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -271,3 +275,179 @@
 
 </body>
 </html> -->
+
+<!-- ===========================================music player=============================================== -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Music Player</title>
+</head>
+<body>
+
+  <h2>Simple Music Player</h2>
+
+  <audio id="player" controls></audio>
+
+  <br><br>
+
+  <button onclick="prevSong()">Previous</button>
+  <button onclick="playSong()">Play</button>
+  <button onclick="pauseSong()">Pause</button>
+  <button onclick="nextSong()">Next</button>
+
+  <h3 id="currentSong"></h3>
+
+  <script>
+    // List of songs (add your mp3 files here)
+    const songs = [
+      "song1.mp3",
+      "song2.mp3",
+      "song3.mp3"
+    ];
+
+    let index = 0;
+
+    const player = document.getElementById("player");
+    const currentSongDisplay = document.getElementById("currentSong");
+
+    // Load first song
+    function loadSong() {
+      player.src = songs[index];
+      currentSongDisplay.innerText = "Playing: " + songs[index];
+    }
+
+    function playSong() {
+      player.play();
+    }
+
+    function pauseSong() {
+      player.pause();
+    }
+
+    function nextSong() {
+      index++;
+      if (index >= songs.length) index = 0;
+      loadSong();
+      playSong();
+    }
+
+    function prevSong() {
+      index--;
+      if (index < 0) index = songs.length - 1;
+      loadSong();
+      playSong();
+    }
+
+    // Auto play next when song ends
+    player.addEventListener("ended", nextSong);
+
+    // Start by loading first song
+    loadSong();
+  </script>
+
+</body>
+</html> -->
+
+<!-- ==============form validation================== -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Validation</title>
+</head>
+<body>
+
+  <h2>Registration Form</h2>
+
+  <form onsubmit="return validateForm()">
+
+    <label>Name:</label><br>
+    <input type="text" id="name"><br><br>
+
+    <label>Email:</label><br>
+    <input type="text" id="email"><br><br>
+
+    <label>Phone:</label><br>
+    <input type="text" id="phone"><br><br>
+
+    <label>Password:</label><br>
+    <input type="password" id="password"><br><br>
+
+    <label>Confirm Password:</label><br>
+    <input type="password" id="cpassword"><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <h3 id="error" style="color:red;"></h3>
+
+  <script>
+    function validateForm() {
+      let name = document.getElementById("name").value.trim();
+      let email = document.getElementById("email").value.trim();
+      let phone = document.getElementById("phone").value.trim();
+      let password = document.getElementById("password").value;
+      let cpassword = document.getElementById("cpassword").value;
+      let error = document.getElementById("error");
+
+      error.innerText = "";
+
+      // Name required
+      if (name === "") {
+        error.innerText = "Name is required";
+        return false;
+      }
+
+      // Email format check
+      let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!email.match(emailPattern)) {
+        error.innerText = "Invalid Email";
+        return false;
+      }
+
+      // Phone: numbers only + 10 digits
+      if (isNaN(phone) || phone.length !== 10) {
+        error.innerText = "Phone must be 10 digits";
+        return false;
+      }
+
+      // Password length
+      if (password.length < 6) {
+        error.innerText = "Password must be at least 6 characters";
+        return false;
+      }
+
+      // Confirm password match
+      if (password !== cpassword) {
+        error.innerText = "Passwords do not match";
+        return false;
+      }
+
+      alert("Form submitted successfully!");
+      return true;
+    }
+  </script>
+
+</body>
+</html> -->
+
+
+<!-- =========================================================================== -->
+
+def login(request):
+    return render(request,'login.html')
+
+def logindata(request):
+    if request.method == 'POST':
+        le = request.POST.get('lemail')
+        lp = request.POST.get('lpassword')
+
+        user = Student.objects.filter(email=le)
+
+        if user.exists():
+
+            userdata = user.first()
+
