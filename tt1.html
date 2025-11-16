@@ -469,3 +469,26 @@ def logindata(request):
         else:
             msg = "Email id not registered"
             return render(request,'login.html',{'msg': msg})
+
+            if user.exists():
+
+            userdata = user.first()
+
+            if userdata.password == lp:
+                return render(request,'success.html', {
+                    'name': userdata.name,
+                    'email': userdata.email,
+                    'gender': userdata.gender,
+                    'higher': userdata.higher,
+                    'details': userdata.detail,
+                    'photo': userdata.photo,
+                    'contact': userdata.contact,
+                    'qualification': userdata.qualification
+                })
+            else:
+                msg = "Wrong Password"
+                return render(request,'login.html',{'msg': msg})
+
+        else:
+            msg = "Email id not registered"
+            return render(request,'login.html',{'msg': msg})
