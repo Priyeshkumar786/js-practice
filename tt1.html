@@ -437,77 +437,13 @@
 
 <!-- =========================================================================== -->
 
-def login(request):
-    return render(request,'login.html')
 
-def logindata(request):
-    if request.method == 'POST':
-        le = request.POST.get('lemail')
-        lp = request.POST.get('lpassword')
-
-        user = Student.objects.filter(email=le)
-
-        if user.exists():
-
-            userdata = user.first()
-
-            if userdata.password == lp:
-                return render(request,'success.html', {
-                    'name': userdata.name,
-                    'email': userdata.email,
-                    'gender': userdata.gender,
-                    'higher': userdata.higher,
-                    'details': userdata.detail,
-                    'photo': userdata.photo,
-                    'contact': userdata.contact,
-                    'qualification': userdata.qualification
-                })
-            else:
-                msg = "Wrong Password"
-                return render(request,'login.html',{'msg': msg})
-
-        else:
-            msg = "Email id not registered"
-            return render(request,'login.html',{'msg': msg})
-
-            if user.exists():
-
-            userdata = user.first()
-
-            if userdata.password == lp:
-                return render(request,'success.html', {
-                    'name': userdata.name,
-                    'email': userdata.email,
-                    'gender': userdata.gender,
-                    'higher': userdata.higher,
-                    'details': userdata.detail,
-                    'photo': userdata.photo,
-                    'contact': userdata.contact,
-                    'qualification': userdata.qualification
-                })
-            else:
-                msg = "Wrong Password"
-                return render(request,'login.html',{'msg': msg})
-
-        else:
-            msg = "Email id not registered"
-            return render(request,'login.html',{'msg': msg})
-
-             else:
-            msg = "Email id not registered"
-            return render(request,'login.html',{'msg': msg})
- else:
-            msg = "Email id not registered"
-            return render(request,'login.html',{'msg': msg})
- else:
-            msg = "Email id not registered"
-            return render(request,'login.html',{'msg': msg})
- else:
-            msg = "Email id not registered"
-            return render(request,'login.html',{'msg': msg})
- else:
-            msg = "Email id not registered"
-            return render(request,'login.html',{'msg': msg})
- else:
-            msg = "Email id not registered"
-            return render(request,'login.html',{'msg': msg})
+    function lap() {
+      // Capture current elapsed without stopping
+      const now = performance.now();
+      const elapsed = elapsedBefore + (startTime ? (now - startTime) : 0);
+      const li = document.createElement('li');
+      li.textContent = formatTime(elapsed);
+      lapsList.appendChild(li);
+    }
+  
