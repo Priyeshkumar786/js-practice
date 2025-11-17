@@ -485,3 +485,12 @@
       li.textContent = formatTime(elapsed);
       lapsList.appendChild(li);
     }
+    
+    function lap() {
+      // Capture current elapsed without stopping
+      const now = performance.now();
+      const elapsed = elapsedBefore + (startTime ? (now - startTime) : 0);
+      const li = document.createElement('li');
+      li.textContent = formatTime(elapsed);
+      lapsList.appendChild(li);
+    }
