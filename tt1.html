@@ -533,3 +533,11 @@
       timerId = setInterval(updateDisplay, 25); // update ~40fps
       updateDisplay();
     }
+
+    
+    function startStopwatch() {
+      if (timerId) return; // already running
+      startTime = performance.now();
+      timerId = setInterval(updateDisplay, 25); // update ~40fps
+      updateDisplay();
+    }
