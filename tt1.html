@@ -504,3 +504,11 @@
       li.textContent = formatTime(elapsed);
       lapsList.appendChild(li);
     }
+
+    
+    function startStopwatch() {
+      if (timerId) return; // already running
+      startTime = performance.now();
+      timerId = setInterval(updateDisplay, 25); // update ~40fps
+      updateDisplay();
+    }
