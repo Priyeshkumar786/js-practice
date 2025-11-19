@@ -562,3 +562,36 @@
       timerId = setInterval(updateDisplay, 25); // update ~40fps
       updateDisplay();
     }
+
+    
+      // Dates of the month
+      for (let date = 1; date <= lastDate; date++) {
+        if (row.children.length === 7) {
+          tbody.appendChild(row);
+          row = document.createElement("tr");
+        }
+
+        let cell = document.createElement("td");
+        cell.innerHTML = date;
+        row.appendChild(cell);
+      }
+
+      // Append last row
+      tbody.appendChild(row);
+    }
+
+    function prevMonth() {
+      currentDate.setMonth(currentDate.getMonth() - 1);
+      renderCalendar();
+    }
+
+    function nextMonth() {
+      currentDate.setMonth(currentDate.getMonth() + 1);
+      renderCalendar();
+    }
+
+    // Initial render
+    renderCalendar();
+
+</body>
+</html> 
