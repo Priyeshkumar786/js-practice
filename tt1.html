@@ -810,6 +810,18 @@
         error.innerText = "Password must be at least 6 characters";
         return false;
       }
+        
+
+      // Confirm password match
+      if (password !== cpassword) {
+        error.innerText = "Passwords do not match";
+        return false;
+      }
+        // Password length
+      if (password.length < 6) {
+        error.innerText = "Password must be at least 6 characters";
+        return false;
+      }
 
       // Confirm password match
       if (password !== cpassword) {
