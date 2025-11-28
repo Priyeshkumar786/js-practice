@@ -692,5 +692,85 @@
       currentDate.setMonth(currentDate.getMonth() - 1);
       renderCalendar();
     }
+
+    <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Validation</title>
+</head>
+<body>
+
+  <h2>Registration Form</h2>
+
+  <form onsubmit="return validateForm()">
+
+    <label>Name:</label><br>
+    <input type="text" id="name"><br><br>
+
+    <label>Email:</label><br>
+    <input type="text" id="email"><br><br>
+
+    <label>Phone:</label><br>
+    <input type="text" id="phone"><br><br>
+
+    <label>Password:</label><br>
+    <input type="password" id="password"><br><br>
+
+    <label>Confirm Password:</label><br>
+    <input type="password" id="cpassword"><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <h3 id="error" style="color:red;"></h3>
+
+  <script>
+    function validateForm() {
+      let name = document.getElementById("name").value.trim();
+      let email = document.getElementById("email").value.trim();
+      let phone = document.getElementById("phone").value.trim();
+      let password = document.getElementById("password").value;
+      let cpassword = document.getElementById("cpassword").value;
+      let error = document.getElementById("error");
+
+      error.innerText = "";
+
+      // Name required
+      if (name === "") {
+        error.innerText = "Name is required";
+        return false;
+      }
+
+      // Email format check
+      let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!email.match(emailPattern)) {
+        error.innerText = "Invalid Email";
+        return false;
+      }
+
+      // Phone: numbers only + 10 digits
+      if (isNaN(phone) || phone.length !== 10) {
+        error.innerText = "Phone must be 10 digits";
+        return false;
+      }
+
+      // Password length
+      if (password.length < 6) {
+        error.innerText = "Password must be at least 6 characters";
+        return false;
+      }
+
+      // Confirm password match
+      if (password !== cpassword) {
+        error.innerText = "Passwords do not match";
+        return false;
+      }
+
+      alert("Form submitted successfully!");
+      return true;
+    }
+  </script>
+
 </body>
 </html> 
