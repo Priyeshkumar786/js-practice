@@ -839,5 +839,11 @@
         error.innerText = "Passwords do not match";
         return false;
       }
+
+
+       function prevMonth() {
+      currentDate.setMonth(currentDate.getMonth() - 1);
+      renderCalendar();
+    }
 </body>
 </html> 
