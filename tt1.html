@@ -892,6 +892,52 @@
       alert("Form submitted successfully!");
       return true;
     }
+      
+      // Phone: numbers only + 10 digits
+      if (isNaN(phone) || phone.length !== 10) {
+        error.innerText = "Phone must be 10 digits";
+        return false;
+      }
+
+      // Password length
+      if (password.length < 6) {
+        error.innerText = "Password must be at least 6 characters";
+        return false;
+      }
+
+      // Confirm password match
+      if (password !== cpassword) {
+        error.innerText = "Passwords do not match";
+        return false;
+      }
+
+      alert("Form submitted successfully!");
+      return true;
+    }
+  </script>
+  
+      // Phone: numbers only + 10 digits
+      if (isNaN(phone) || phone.length !== 10) {
+        error.innerText = "Phone must be 10 digits";
+        return false;
+      }
+
+      // Password length
+      if (password.length < 6) {
+        error.innerText = "Password must be at least 6 characters";
+        return false;
+      }
+
+      // Confirm password match
+      if (password !== cpassword) {
+        error.innerText = "Passwords do not match";
+        return false;
+      }
+
+      alert("Form submitted successfully!");
+      return true;
+    }
+  </script>
   </script>
 </body>
 </html> 
