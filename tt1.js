@@ -71,3 +71,17 @@
 //         display.value = "Error";
 //       }
 //     }
+
+let display = document.getElementById("display");
+
+//     function append(value) {
+//       display.value += value;
+//     }
+
+//     function clearDisplay() {
+//       display.value = "";
+//     }
+
+//     function deleteChar() {
+//       display.value = display.value.slice(0, -1);
+//     }
