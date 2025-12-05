@@ -149,3 +149,15 @@ let person = {
   age: 22,
   city: "Delhi"
 };
+
+
+//callback
+
+function greet(name, callback) {
+  console.log("Hello " + name);
+  callback();
+}
+function done() {
+  console.log("Greeting done!");
+}
+greet("Priyesh", done);
