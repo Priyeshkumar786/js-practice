@@ -137,3 +137,8 @@ let display = document.getElementById("display");
 //     function deleteChar() {
 //       display.value = display.value.slice(0, -1);
 //     }
+
+let x = 5;
+let y = "5";
+console.log(x == y);
+console.log(x === y);
