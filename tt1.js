@@ -161,3 +161,12 @@ function done() {
   console.log("Greeting done!");
 }
 greet("Priyesh", done);
+
+
+const person = {
+  name: "Priyesh",
+  sayHi() {
+    console.log(this.name);
+  }
+};
+person.sayHi(); // Priyesh
