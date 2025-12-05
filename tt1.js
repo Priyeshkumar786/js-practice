@@ -183,3 +183,15 @@ function outer() {
 const counter = outer();
 console.log(counter()); // 1
 console.log(counter()); // 2
+
+
+let arr = [1, 2, 3, 4];
+
+// map
+console.log(arr.map(x => x * 2)); // [2,4,6,8]
+
+// filter
+console.log(arr.filter(x => x > 2)); // [3,4]
+
+// reduce
+console.log(arr.reduce((sum, x) => sum + x, 0)); // 10
