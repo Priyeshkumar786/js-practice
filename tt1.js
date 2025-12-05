@@ -142,3 +142,10 @@ let x = 5;
 let y = "5";
 console.log(x == y);
 console.log(x === y);
+
+
+let person = {
+  name: "Priyesh",
+  age: 22,
+  city: "Delhi"
+};
