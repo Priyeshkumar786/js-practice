@@ -426,3 +426,9 @@ arr[10] = 99;
 console.log(arr.length);
 
 // typescript is incomplete
+
+console.log(x);            
+let x = 10;
+
+console.log(y);            
+var y = 10;
