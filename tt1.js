@@ -387,3 +387,18 @@
 let result = 3 + 2 + "7";
 console.log(result);
 
+
+
+// ===================================
+
+var x = 10;
+var x = 20; 
+console.log("var:", x); // 20
+
+let y = 30;
+
+
+console.log("let:", y); // 40
+
+const z = 50;
+console.log("const:", z); // 50
