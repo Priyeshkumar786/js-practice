@@ -402,3 +402,15 @@ console.log("let:", y); // 40
 
 const z = 50;
 console.log("const:", z); // 50
+
+
+
+
+// =====================================
+
+// TDZ example
+console.log(x);            // ReferenceError (x in TDZ)
+let x = 10;
+
+console.log(y);            // undefined (var is initialized at hoist time)
+var y = 10;
