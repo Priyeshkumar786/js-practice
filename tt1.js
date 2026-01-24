@@ -20,13 +20,8 @@
 //       } catch {
 //         display.value = "Error";
 //       }
-
-
-//     function calculate() {
-//       try {
-//         display.value = eval(display.value);
-//       } catch {
-//         display.value = "Error";
+startTime = performance.now();
+      
 //       }
 
 //     function calculate() {
